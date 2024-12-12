@@ -1,10 +1,10 @@
 import { Router, Request, Response } from "express";
-import punchasesRoutes from "./purchases.routes";
+import purchasesRoutes from "./purchases.routes";
 import usersRoutes from "./users.routes";
 
 const router = Router();
 
-router.use("/buy", punchasesRoutes);
+router.use("/buy", purchasesRoutes);
 router.use("/users", usersRoutes);
 
 router.use((req: Request, res: Response): void => {

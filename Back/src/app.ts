@@ -1,9 +1,11 @@
 import express, { Application, NextFunction, Request, Response } from "express";
 import routes from "./routes/index";
+import cors from "cors";
 
 //headers
 const app: Application = express();
 app.use(express.json({ limit: "50mb" }));
+app.use(cors());
 
 //routes
 app.use("/api", routes);
