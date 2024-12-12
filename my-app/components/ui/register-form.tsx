@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -14,7 +13,7 @@ import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import axios from "axios";
 
-export function DialogDemo() {
+export function RegistrationForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const handleRegister = async () => {

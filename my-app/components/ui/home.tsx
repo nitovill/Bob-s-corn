@@ -2,16 +2,9 @@
 
 import { useState } from "react";
 import axios from "axios";
-import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -20,9 +13,9 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { DialogDemo } from "./register-form";
+import { RegistrationForm } from "./register-form";
 
-export function LoginForm() {
+export function Home() {
   const [email, setEmail] = useState("");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [dialogMessage, setDialogMessage] = useState("");
@@ -91,7 +84,7 @@ export function LoginForm() {
               Comprar
             </Button>
           </div>
-          <DialogDemo />
+          <RegistrationForm />
         </CardContent>
       </Card>
 

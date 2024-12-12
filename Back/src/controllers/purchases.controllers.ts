@@ -57,8 +57,7 @@ export const getPurchasesByUser = async (
   next: NextFunction
 ): Promise<void> => {
   try {
-    const userEmail: any = req.query.email;
-
+    const userEmail = req.query.email as string;
     if (!userEmail) {
       throw new Error("Missing user email");
     }
